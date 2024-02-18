@@ -1,5 +1,5 @@
 import { initializeApp, applicationDefault } from 'firebase-admin/app';
-import { getMessaging, send } from "firebase-admin/messaging";
+import { getMessaging} from "firebase-admin/messaging";
 import express from "express";
 import cors from "cors";
 
