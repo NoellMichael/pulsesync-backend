@@ -25,7 +25,7 @@ initializeApp({
 
 const messaging = getMessaging();
 
-app.post("/send", async function (req, res) {
+app.get("/send", async function (req, res) {
   const receivedToken = req.body.fcmToken;
   const message = {
     notification: {
@@ -34,6 +34,10 @@ app.post("/send", async function (req, res) {
     },
     token: receivedToken,
   };
+
+  /*app.get("/", (req, res) => {
+      res.send("hello");
+    });*/
 
   try {
     const response = await send(messaging, message);
@@ -49,6 +53,8 @@ app.post("/send", async function (req, res) {
   }
 });
 
-app.listen(3000, function () {
-  console.log("Server started on port 3000");
-});
+
+  app.listen(3000, "0.0.0.0", () => {
+    console.log("Server started on port 3000");
+  });
+  
