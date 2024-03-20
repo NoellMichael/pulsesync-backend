@@ -9,7 +9,6 @@ const app = express();
 var temperature;
 var heartRate;
 
-
 app.use(express.json());
 
 app.use(
@@ -90,28 +89,7 @@ app.get("/get-notification", async (req, res) => {
       }
     });
     res.send(`${temperature},${heartRate}`);
-    // if (heartrate > 7.5 || heartrate < 6.5) {
-
-    //   /*await getMessaging().send({
-    //     notification: {
-    //       title: "Heartrate",
-    //       body: "Threshold crossed",
-    //     },
-    //     token: "YOUR FCM TOKEN",
-    //   })*/
-
-    // }
-
-    // if (temp > 30 || temp < 22) {
-
-    //   // await getMessaging().send({
-    //   //   notification: {
-    //   //     title: "Temperature",
-    //   //     body: "Threshold crossed",
-    //   //   },
-    //   //   token: "YOUR FCM TOKEN",
-    //   // })
-    // }
+  
   } catch (error) {
     console.error(error);
     res.status(500).send("Error fetching data");
