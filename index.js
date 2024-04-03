@@ -42,7 +42,8 @@ initializeApp({
 const db = admin.database();
 const patientRef = db.ref("/PatientRecord/12285");
 const receivedToken =
-"cfbyG9QYSvizvOzX6nphbG:APA91bGhozCWJkSgOHBBG3utPfwt9jShpQ9UriQAb3tLEkwgzoMOAZC0sjUlSGzR9z3OBG6VKl4z6dvOf-9zY6JDyXxVADEJqULImlAsR3tYDJYDphNEX6OFyEHHShAed9rBJnqagOy8";
+"cXhP3F00TZm7O5PyN2Z3za:APA91bEQ4pJuAF6E6ZROFjwZAR95HtxbvdW2L0hMukCm-amdIbK11eOdqncj1_J4syg7bi1jyCdtq6BICEiGaiYVVWT9BvkISz8Zh2n-lMKY71EW64ShuSMMqn7trBN5kCkRWkCToHmk";
+//"cfbyG9QYSvizvOzX6nphbG:APA91bGhozCWJkSgOHBBG3utPfwt9jShpQ9UriQAb3tLEkwgzoMOAZC0sjUlSGzR9z3OBG6VKl4z6dvOf-9zY6JDyXxVADEJqULImlAsR3tYDJYDphNEX6OFyEHHShAed9rBJnqagOy8";
  // "c0fGrfLxQTic1DwoP5Dnog:APA91bFwup5zGkiCl7hh1wmIM1RU4lMFVnSn5pE3lG_P0vUVIZB55_uvhiVYPz1ebBlZzfkz9NRfpQuc-0d5Y-vBlHtDzBD7TXx_23zI2ZzVIABGghrEC4c0dYv0B5mYE4SZt5RNGaks";
 
 // Function to send notification
