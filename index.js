@@ -42,7 +42,8 @@ initializeApp({
 const db = admin.database();
 const patientRef = db.ref("/PatientRecord/12285");
 const receivedToken =
-  "c0fGrfLxQTic1DwoP5Dnog:APA91bFwup5zGkiCl7hh1wmIM1RU4lMFVnSn5pE3lG_P0vUVIZB55_uvhiVYPz1ebBlZzfkz9NRfpQuc-0d5Y-vBlHtDzBD7TXx_23zI2ZzVIABGghrEC4c0dYv0B5mYE4SZt5RNGaks";
+"cfbyG9QYSvizvOzX6nphbG:APA91bGhozCWJkSgOHBBG3utPfwt9jShpQ9UriQAb3tLEkwgzoMOAZC0sjUlSGzR9z3OBG6VKl4z6dvOf-9zY6JDyXxVADEJqULImlAsR3tYDJYDphNEX6OFyEHHShAed9rBJnqagOy8";
+ // "c0fGrfLxQTic1DwoP5Dnog:APA91bFwup5zGkiCl7hh1wmIM1RU4lMFVnSn5pE3lG_P0vUVIZB55_uvhiVYPz1ebBlZzfkz9NRfpQuc-0d5Y-vBlHtDzBD7TXx_23zI2ZzVIABGghrEC4c0dYv0B5mYE4SZt5RNGaks";
 
 // Function to send notification
 async function sendNotification(title, body) {
